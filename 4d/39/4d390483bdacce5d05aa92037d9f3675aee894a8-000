@@ -1,0 +1,1495 @@
+<!doctype html>
+<html lang="fr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Planche Comparative Serif (V_001) : Anthropic Serif, Newsreader, Source Serif 4</title>
+<style>
+  /* @tokens:typography */
+  :root {
+    --font-sans: Inter, system-ui, -apple-system, sans-serif;
+    --font-serif: "Anthropic Serif", Georgia, serif;
+    --font-mono: "Anthropic Mono", ui-monospace, SFMono-Regular, monospace;
+  }
+  /* @end:typography */
+
+  @font-face { font-family: 'zr_anth_var_rom'; src: url('file:///Users/zenray/.claude/skills/zenray-edit/templates/zenray-studio/02-store-final/fonts/AnthropicSerif-Romans.woff2') format('woff2'); font-weight: 300 900; font-style: normal; }
+  @font-face { font-family: 'zr_anth_var_ita'; src: url('file:///Users/zenray/.claude/skills/zenray-edit/templates/zenray-studio/02-store-final/fonts/AnthropicSerif-Italics.woff2') format('woff2'); font-weight: 300 900; font-style: italic; }
+  @font-face { font-family: 'zr_news_var_rom'; src: url('file:///Users/zenray/Library/Fonts/Newsreader-VariableFont_opsz,wght.ttf') format('truetype'); font-weight: 200 800; font-style: normal; }
+  @font-face { font-family: 'zr_news_var_ita'; src: url('file:///Users/zenray/Library/Fonts/Newsreader-Italic-VariableFont_opsz,wght.ttf') format('truetype'); font-weight: 200 800; font-style: italic; }
+  @font-face { font-family: 'zr_src4_var_rom'; src: url('file:///Users/zenray/Library/Fonts/SourceSerif4-VariableFont_opsz,wght.ttf') format('truetype'); font-weight: 200 900; font-style: normal; }
+  @font-face { font-family: 'zr_src4_var_ita'; src: url('file:///Users/zenray/Library/Fonts/SourceSerif4-Italic-VariableFont_opsz,wght.ttf') format('truetype'); font-weight: 200 900; font-style: italic; }
+  @font-face { font-family: 'zr_anth_300_rom'; src: url('file:///Users/zenray/Library/Fonts/AnthropicSerif-Light.ttf') format('truetype'); }
+  @font-face { font-family: 'zr_anth_300_ita'; src: url('file:///Users/zenray/Library/Fonts/AnthropicSerif-LightItalic.ttf') format('truetype'); }
+  @font-face { font-family: 'zr_anth_400_rom'; src: url('file:///Users/zenray/Library/Fonts/AnthropicSerif-Regular.ttf') format('truetype'); }
+  @font-face { font-family: 'zr_anth_400_ita'; src: url('file:///Users/zenray/Library/Fonts/AnthropicSerif-Italic.ttf') format('truetype'); }
+  @font-face { font-family: 'zr_anth_500_rom'; src: url('file:///Users/zenray/Library/Fonts/AnthropicSerif-Medium.ttf') format('truetype'); }
+  @font-face { font-family: 'zr_anth_500_ita'; src: url('file:///Users/zenray/Library/Fonts/AnthropicSerif-MediumItalic.ttf') format('truetype'); }
+  @font-face { font-family: 'zr_anth_600_rom'; src: url('file:///Users/zenray/Library/Fonts/AnthropicSerif-SemiBold.ttf') format('truetype'); }
+  @font-face { font-family: 'zr_anth_600_ita'; src: url('file:///Users/zenray/Library/Fonts/AnthropicSerif-SemiBoldItalic.ttf') format('truetype'); }
+  @font-face { font-family: 'zr_anth_700_rom'; src: url('file:///Users/zenray/Library/Fonts/AnthropicSerif-Bold.ttf') format('truetype'); }
+  @font-face { font-family: 'zr_anth_700_ita'; src: url('file:///Users/zenray/Library/Fonts/AnthropicSerif-BoldItalic.ttf') format('truetype'); }
+  @font-face { font-family: 'zr_anth_800_rom'; src: url('file:///Users/zenray/Library/Fonts/AnthropicSerif-ExtraBold.ttf') format('truetype'); }
+  @font-face { font-family: 'zr_anth_800_ita'; src: url('file:///Users/zenray/Library/Fonts/AnthropicSerif-ExtraBoldItalic.ttf') format('truetype'); }
+  @font-face { font-family: 'zr_anth_900_rom'; src: url('file:///Users/zenray/Library/Fonts/AnthropicSerif-Black.ttf') format('truetype'); }
+  @font-face { font-family: 'zr_anth_900_ita'; src: url('file:///Users/zenray/Library/Fonts/AnthropicSerif-BlackItalic.ttf') format('truetype'); }
+  @font-face { font-family: 'zr_news_9pt_200_rom'; src: url('file:///Users/zenray/Library/Fonts/Newsreader_9pt-ExtraLight.ttf') format('truetype'); }
+  @font-face { font-family: 'zr_news_9pt_200_ita'; src: url('file:///Users/zenray/Library/Fonts/Newsreader_9pt-ExtraLightItalic.ttf') format('truetype'); }
+  @font-face { font-family: 'zr_news_9pt_300_rom'; src: url('file:///Users/zenray/Library/Fonts/Newsreader_9pt-Light.ttf') format('truetype'); }
+  @font-face { font-family: 'zr_news_9pt_300_ita'; src: url('file:///Users/zenray/Library/Fonts/Newsreader_9pt-LightItalic.ttf') format('truetype'); }
+  @font-face { font-family: 'zr_news_9pt_400_rom'; src: url('file:///Users/zenray/Library/Fonts/Newsreader_9pt-Regular.ttf') format('truetype'); }
+  @font-face { font-family: 'zr_news_9pt_400_ita'; src: url('file:///Users/zenray/Library/Fonts/Newsreader_9pt-Italic.ttf') format('truetype'); }
+  @font-face { font-family: 'zr_news_9pt_500_rom'; src: url('file:///Users/zenray/Library/Fonts/Newsreader_9pt-Medium.ttf') format('truetype'); }
+  @font-face { font-family: 'zr_news_9pt_500_ita'; src: url('file:///Users/zenray/Library/Fonts/Newsreader_9pt-MediumItalic.ttf') format('truetype'); }
+  @font-face { font-family: 'zr_news_9pt_600_rom'; src: url('file:///Users/zenray/Library/Fonts/Newsreader_9pt-SemiBold.ttf') format('truetype'); }
+  @font-face { font-family: 'zr_news_9pt_600_ita'; src: url('file:///Users/zenray/Library/Fonts/Newsreader_9pt-SemiBoldItalic.ttf') format('truetype'); }
+  @font-face { font-family: 'zr_news_9pt_700_rom'; src: url('file:///Users/zenray/Library/Fonts/Newsreader_9pt-Bold.ttf') format('truetype'); }
+  @font-face { font-family: 'zr_news_9pt_700_ita'; src: url('file:///Users/zenray/Library/Fonts/Newsreader_9pt-BoldItalic.ttf') format('truetype'); }
+  @font-face { font-family: 'zr_news_9pt_800_rom'; src: url('file:///Users/zenray/Library/Fonts/Newsreader_9pt-ExtraBold.ttf') format('truetype'); }
+  @font-face { font-family: 'zr_news_9pt_800_ita'; src: url('file:///Users/zenray/Library/Fonts/Newsreader_9pt-ExtraBoldItalic.ttf') format('truetype'); }
+  @font-face { font-family: 'zr_news_14pt_200_rom'; src: url('file:///Users/zenray/Library/Fonts/Newsreader_14pt-ExtraLight.ttf') format('truetype'); }
+  @font-face { font-family: 'zr_news_14pt_200_ita'; src: url('file:///Users/zenray/Library/Fonts/Newsreader_14pt-ExtraLightItalic.ttf') format('truetype'); }
+  @font-face { font-family: 'zr_news_14pt_300_rom'; src: url('file:///Users/zenray/Library/Fonts/Newsreader_14pt-Light.ttf') format('truetype'); }
+  @font-face { font-family: 'zr_news_14pt_300_ita'; src: url('file:///Users/zenray/Library/Fonts/Newsreader_14pt-LightItalic.ttf') format('truetype'); }
+  @font-face { font-family: 'zr_news_14pt_400_rom'; src: url('file:///Users/zenray/Library/Fonts/Newsreader_14pt-Regular.ttf') format('truetype'); }
+  @font-face { font-family: 'zr_news_14pt_400_ita'; src: url('file:///Users/zenray/Library/Fonts/Newsreader_14pt-Italic.ttf') format('truetype'); }
+  @font-face { font-family: 'zr_news_14pt_500_rom'; src: url('file:///Users/zenray/Library/Fonts/Newsreader_14pt-Medium.ttf') format('truetype'); }
+  @font-face { font-family: 'zr_news_14pt_500_ita'; src: url('file:///Users/zenray/Library/Fonts/Newsreader_14pt-MediumItalic.ttf') format('truetype'); }
+  @font-face { font-family: 'zr_news_14pt_600_rom'; src: url('file:///Users/zenray/Library/Fonts/Newsreader_14pt-SemiBold.ttf') format('truetype'); }
+  @font-face { font-family: 'zr_news_14pt_600_ita'; src: url('file:///Users/zenray/Library/Fonts/Newsreader_14pt-SemiBoldItalic.ttf') format('truetype'); }
+  @font-face { font-family: 'zr_news_14pt_700_rom'; src: url('file:///Users/zenray/Library/Fonts/Newsreader_14pt-Bold.ttf') format('truetype'); }
+  @font-face { font-family: 'zr_news_14pt_700_ita'; src: url('file:///Users/zenray/Library/Fonts/Newsreader_14pt-BoldItalic.ttf') format('truetype'); }
+  @font-face { font-family: 'zr_news_14pt_800_rom'; src: url('file:///Users/zenray/Library/Fonts/Newsreader_14pt-ExtraBold.ttf') format('truetype'); }
+  @font-face { font-family: 'zr_news_14pt_800_ita'; src: url('file:///Users/zenray/Library/Fonts/Newsreader_14pt-ExtraBoldItalic.ttf') format('truetype'); }
+  @font-face { font-family: 'zr_news_24pt_200_rom'; src: url('file:///Users/zenray/Library/Fonts/Newsreader_24pt-ExtraLight.ttf') format('truetype'); }
+  @font-face { font-family: 'zr_news_24pt_200_ita'; src: url('file:///Users/zenray/Library/Fonts/Newsreader_24pt-ExtraLightItalic.ttf') format('truetype'); }
+  @font-face { font-family: 'zr_news_24pt_300_rom'; src: url('file:///Users/zenray/Library/Fonts/Newsreader_24pt-Light.ttf') format('truetype'); }
+  @font-face { font-family: 'zr_news_24pt_300_ita'; src: url('file:///Users/zenray/Library/Fonts/Newsreader_24pt-LightItalic.ttf') format('truetype'); }
+  @font-face { font-family: 'zr_news_24pt_400_rom'; src: url('file:///Users/zenray/Library/Fonts/Newsreader_24pt-Regular.ttf') format('truetype'); }
+  @font-face { font-family: 'zr_news_24pt_400_ita'; src: url('file:///Users/zenray/Library/Fonts/Newsreader_24pt-Italic.ttf') format('truetype'); }
+  @font-face { font-family: 'zr_news_24pt_500_rom'; src: url('file:///Users/zenray/Library/Fonts/Newsreader_24pt-Medium.ttf') format('truetype'); }
+  @font-face { font-family: 'zr_news_24pt_500_ita'; src: url('file:///Users/zenray/Library/Fonts/Newsreader_24pt-MediumItalic.ttf') format('truetype'); }
+  @font-face { font-family: 'zr_news_24pt_600_rom'; src: url('file:///Users/zenray/Library/Fonts/Newsreader_24pt-SemiBold.ttf') format('truetype'); }
+  @font-face { font-family: 'zr_news_24pt_600_ita'; src: url('file:///Users/zenray/Library/Fonts/Newsreader_24pt-SemiBoldItalic.ttf') format('truetype'); }
+  @font-face { font-family: 'zr_news_24pt_700_rom'; src: url('file:///Users/zenray/Library/Fonts/Newsreader_24pt-Bold.ttf') format('truetype'); }
+  @font-face { font-family: 'zr_news_24pt_700_ita'; src: url('file:///Users/zenray/Library/Fonts/Newsreader_24pt-BoldItalic.ttf') format('truetype'); }
+  @font-face { font-family: 'zr_news_24pt_800_rom'; src: url('file:///Users/zenray/Library/Fonts/Newsreader_24pt-ExtraBold.ttf') format('truetype'); }
+  @font-face { font-family: 'zr_news_24pt_800_ita'; src: url('file:///Users/zenray/Library/Fonts/Newsreader_24pt-ExtraBoldItalic.ttf') format('truetype'); }
+  @font-face { font-family: 'zr_news_36pt_200_rom'; src: url('file:///Users/zenray/Library/Fonts/Newsreader_36pt-ExtraLight.ttf') format('truetype'); }
+  @font-face { font-family: 'zr_news_36pt_200_ita'; src: url('file:///Users/zenray/Library/Fonts/Newsreader_36pt-ExtraLightItalic.ttf') format('truetype'); }
+  @font-face { font-family: 'zr_news_36pt_300_rom'; src: url('file:///Users/zenray/Library/Fonts/Newsreader_36pt-Light.ttf') format('truetype'); }
+  @font-face { font-family: 'zr_news_36pt_300_ita'; src: url('file:///Users/zenray/Library/Fonts/Newsreader_36pt-LightItalic.ttf') format('truetype'); }
+  @font-face { font-family: 'zr_news_36pt_400_rom'; src: url('file:///Users/zenray/Library/Fonts/Newsreader_36pt-Regular.ttf') format('truetype'); }
+  @font-face { font-family: 'zr_news_36pt_400_ita'; src: url('file:///Users/zenray/Library/Fonts/Newsreader_36pt-Italic.ttf') format('truetype'); }
+  @font-face { font-family: 'zr_news_36pt_500_rom'; src: url('file:///Users/zenray/Library/Fonts/Newsreader_36pt-Medium.ttf') format('truetype'); }
+  @font-face { font-family: 'zr_news_36pt_500_ita'; src: url('file:///Users/zenray/Library/Fonts/Newsreader_36pt-MediumItalic.ttf') format('truetype'); }
+  @font-face { font-family: 'zr_news_36pt_600_rom'; src: url('file:///Users/zenray/Library/Fonts/Newsreader_36pt-SemiBold.ttf') format('truetype'); }
+  @font-face { font-family: 'zr_news_36pt_600_ita'; src: url('file:///Users/zenray/Library/Fonts/Newsreader_36pt-SemiBoldItalic.ttf') format('truetype'); }
+  @font-face { font-family: 'zr_news_36pt_700_rom'; src: url('file:///Users/zenray/Library/Fonts/Newsreader_36pt-Bold.ttf') format('truetype'); }
+  @font-face { font-family: 'zr_news_36pt_700_ita'; src: url('file:///Users/zenray/Library/Fonts/Newsreader_36pt-BoldItalic.ttf') format('truetype'); }
+  @font-face { font-family: 'zr_news_36pt_800_rom'; src: url('file:///Users/zenray/Library/Fonts/Newsreader_36pt-ExtraBold.ttf') format('truetype'); }
+  @font-face { font-family: 'zr_news_36pt_800_ita'; src: url('file:///Users/zenray/Library/Fonts/Newsreader_36pt-ExtraBoldItalic.ttf') format('truetype'); }
+  @font-face { font-family: 'zr_news_60pt_200_rom'; src: url('file:///Users/zenray/Library/Fonts/Newsreader_60pt-ExtraLight.ttf') format('truetype'); }
+  @font-face { font-family: 'zr_news_60pt_200_ita'; src: url('file:///Users/zenray/Library/Fonts/Newsreader_60pt-ExtraLightItalic.ttf') format('truetype'); }
+  @font-face { font-family: 'zr_news_60pt_300_rom'; src: url('file:///Users/zenray/Library/Fonts/Newsreader_60pt-Light.ttf') format('truetype'); }
+  @font-face { font-family: 'zr_news_60pt_300_ita'; src: url('file:///Users/zenray/Library/Fonts/Newsreader_60pt-LightItalic.ttf') format('truetype'); }
+  @font-face { font-family: 'zr_news_60pt_400_rom'; src: url('file:///Users/zenray/Library/Fonts/Newsreader_60pt-Regular.ttf') format('truetype'); }
+  @font-face { font-family: 'zr_news_60pt_400_ita'; src: url('file:///Users/zenray/Library/Fonts/Newsreader_60pt-Italic.ttf') format('truetype'); }
+  @font-face { font-family: 'zr_news_60pt_500_rom'; src: url('file:///Users/zenray/Library/Fonts/Newsreader_60pt-Medium.ttf') format('truetype'); }
+  @font-face { font-family: 'zr_news_60pt_500_ita'; src: url('file:///Users/zenray/Library/Fonts/Newsreader_60pt-MediumItalic.ttf') format('truetype'); }
+  @font-face { font-family: 'zr_news_60pt_600_rom'; src: url('file:///Users/zenray/Library/Fonts/Newsreader_60pt-SemiBold.ttf') format('truetype'); }
+  @font-face { font-family: 'zr_news_60pt_600_ita'; src: url('file:///Users/zenray/Library/Fonts/Newsreader_60pt-SemiBoldItalic.ttf') format('truetype'); }
+  @font-face { font-family: 'zr_news_60pt_700_rom'; src: url('file:///Users/zenray/Library/Fonts/Newsreader_60pt-Bold.ttf') format('truetype'); }
+  @font-face { font-family: 'zr_news_60pt_700_ita'; src: url('file:///Users/zenray/Library/Fonts/Newsreader_60pt-BoldItalic.ttf') format('truetype'); }
+  @font-face { font-family: 'zr_news_60pt_800_rom'; src: url('file:///Users/zenray/Library/Fonts/Newsreader_60pt-ExtraBold.ttf') format('truetype'); }
+  @font-face { font-family: 'zr_news_60pt_800_ita'; src: url('file:///Users/zenray/Library/Fonts/Newsreader_60pt-ExtraBoldItalic.ttf') format('truetype'); }
+  @font-face { font-family: 'zr_src4_base_200_rom'; src: url('file:///Users/zenray/Library/Fonts/SourceSerif4-ExtraLight.ttf') format('truetype'); }
+  @font-face { font-family: 'zr_src4_base_200_ita'; src: url('file:///Users/zenray/Library/Fonts/SourceSerif4-ExtraLightItalic.ttf') format('truetype'); }
+  @font-face { font-family: 'zr_src4_base_300_rom'; src: url('file:///Users/zenray/Library/Fonts/SourceSerif4-Light.ttf') format('truetype'); }
+  @font-face { font-family: 'zr_src4_base_300_ita'; src: url('file:///Users/zenray/Library/Fonts/SourceSerif4-LightItalic.ttf') format('truetype'); }
+  @font-face { font-family: 'zr_src4_base_400_rom'; src: url('file:///Users/zenray/Library/Fonts/SourceSerif4-Regular.ttf') format('truetype'); }
+  @font-face { font-family: 'zr_src4_base_400_ita'; src: url('file:///Users/zenray/Library/Fonts/SourceSerif4-Italic.ttf') format('truetype'); }
+  @font-face { font-family: 'zr_src4_base_500_rom'; src: url('file:///Users/zenray/Library/Fonts/SourceSerif4-Medium.ttf') format('truetype'); }
+  @font-face { font-family: 'zr_src4_base_500_ita'; src: url('file:///Users/zenray/Library/Fonts/SourceSerif4-MediumItalic.ttf') format('truetype'); }
+  @font-face { font-family: 'zr_src4_base_600_rom'; src: url('file:///Users/zenray/Library/Fonts/SourceSerif4-SemiBold.ttf') format('truetype'); }
+  @font-face { font-family: 'zr_src4_base_600_ita'; src: url('file:///Users/zenray/Library/Fonts/SourceSerif4-SemiBoldItalic.ttf') format('truetype'); }
+  @font-face { font-family: 'zr_src4_base_700_rom'; src: url('file:///Users/zenray/Library/Fonts/SourceSerif4-Bold.ttf') format('truetype'); }
+  @font-face { font-family: 'zr_src4_base_700_ita'; src: url('file:///Users/zenray/Library/Fonts/SourceSerif4-BoldItalic.ttf') format('truetype'); }
+  @font-face { font-family: 'zr_src4_base_800_rom'; src: url('file:///Users/zenray/Library/Fonts/SourceSerif4-ExtraBold.ttf') format('truetype'); }
+  @font-face { font-family: 'zr_src4_base_800_ita'; src: url('file:///Users/zenray/Library/Fonts/SourceSerif4-ExtraBoldItalic.ttf') format('truetype'); }
+  @font-face { font-family: 'zr_src4_base_900_rom'; src: url('file:///Users/zenray/Library/Fonts/SourceSerif4-Black.ttf') format('truetype'); }
+  @font-face { font-family: 'zr_src4_base_900_ita'; src: url('file:///Users/zenray/Library/Fonts/SourceSerif4-BlackItalic.ttf') format('truetype'); }
+  @font-face { font-family: 'zr_src4_18pt_200_rom'; src: url('file:///Users/zenray/Library/Fonts/SourceSerif4_18pt-ExtraLight.ttf') format('truetype'); }
+  @font-face { font-family: 'zr_src4_18pt_200_ita'; src: url('file:///Users/zenray/Library/Fonts/SourceSerif4_18pt-ExtraLightItalic.ttf') format('truetype'); }
+  @font-face { font-family: 'zr_src4_18pt_300_rom'; src: url('file:///Users/zenray/Library/Fonts/SourceSerif4_18pt-Light.ttf') format('truetype'); }
+  @font-face { font-family: 'zr_src4_18pt_300_ita'; src: url('file:///Users/zenray/Library/Fonts/SourceSerif4_18pt-LightItalic.ttf') format('truetype'); }
+  @font-face { font-family: 'zr_src4_18pt_400_rom'; src: url('file:///Users/zenray/Library/Fonts/SourceSerif4_18pt-Regular.ttf') format('truetype'); }
+  @font-face { font-family: 'zr_src4_18pt_400_ita'; src: url('file:///Users/zenray/Library/Fonts/SourceSerif4_18pt-Italic.ttf') format('truetype'); }
+  @font-face { font-family: 'zr_src4_18pt_500_rom'; src: url('file:///Users/zenray/Library/Fonts/SourceSerif4_18pt-Medium.ttf') format('truetype'); }
+  @font-face { font-family: 'zr_src4_18pt_500_ita'; src: url('file:///Users/zenray/Library/Fonts/SourceSerif4_18pt-MediumItalic.ttf') format('truetype'); }
+  @font-face { font-family: 'zr_src4_18pt_600_rom'; src: url('file:///Users/zenray/Library/Fonts/SourceSerif4_18pt-SemiBold.ttf') format('truetype'); }
+  @font-face { font-family: 'zr_src4_18pt_600_ita'; src: url('file:///Users/zenray/Library/Fonts/SourceSerif4_18pt-SemiBoldItalic.ttf') format('truetype'); }
+  @font-face { font-family: 'zr_src4_18pt_700_rom'; src: url('file:///Users/zenray/Library/Fonts/SourceSerif4_18pt-Bold.ttf') format('truetype'); }
+  @font-face { font-family: 'zr_src4_18pt_700_ita'; src: url('file:///Users/zenray/Library/Fonts/SourceSerif4_18pt-BoldItalic.ttf') format('truetype'); }
+  @font-face { font-family: 'zr_src4_18pt_800_rom'; src: url('file:///Users/zenray/Library/Fonts/SourceSerif4_18pt-ExtraBold.ttf') format('truetype'); }
+  @font-face { font-family: 'zr_src4_18pt_800_ita'; src: url('file:///Users/zenray/Library/Fonts/SourceSerif4_18pt-ExtraBoldItalic.ttf') format('truetype'); }
+  @font-face { font-family: 'zr_src4_18pt_900_rom'; src: url('file:///Users/zenray/Library/Fonts/SourceSerif4_18pt-Black.ttf') format('truetype'); }
+  @font-face { font-family: 'zr_src4_18pt_900_ita'; src: url('file:///Users/zenray/Library/Fonts/SourceSerif4_18pt-BlackItalic.ttf') format('truetype'); }
+  @font-face { font-family: 'zr_src4_36pt_200_rom'; src: url('file:///Users/zenray/Library/Fonts/SourceSerif4_36pt-ExtraLight.ttf') format('truetype'); }
+  @font-face { font-family: 'zr_src4_36pt_200_ita'; src: url('file:///Users/zenray/Library/Fonts/SourceSerif4_36pt-ExtraLightItalic.ttf') format('truetype'); }
+  @font-face { font-family: 'zr_src4_36pt_300_rom'; src: url('file:///Users/zenray/Library/Fonts/SourceSerif4_36pt-Light.ttf') format('truetype'); }
+  @font-face { font-family: 'zr_src4_36pt_300_ita'; src: url('file:///Users/zenray/Library/Fonts/SourceSerif4_36pt-LightItalic.ttf') format('truetype'); }
+  @font-face { font-family: 'zr_src4_36pt_400_rom'; src: url('file:///Users/zenray/Library/Fonts/SourceSerif4_36pt-Regular.ttf') format('truetype'); }
+  @font-face { font-family: 'zr_src4_36pt_400_ita'; src: url('file:///Users/zenray/Library/Fonts/SourceSerif4_36pt-Italic.ttf') format('truetype'); }
+  @font-face { font-family: 'zr_src4_36pt_500_rom'; src: url('file:///Users/zenray/Library/Fonts/SourceSerif4_36pt-Medium.ttf') format('truetype'); }
+  @font-face { font-family: 'zr_src4_36pt_500_ita'; src: url('file:///Users/zenray/Library/Fonts/SourceSerif4_36pt-MediumItalic.ttf') format('truetype'); }
+  @font-face { font-family: 'zr_src4_36pt_600_rom'; src: url('file:///Users/zenray/Library/Fonts/SourceSerif4_36pt-SemiBold.ttf') format('truetype'); }
+  @font-face { font-family: 'zr_src4_36pt_600_ita'; src: url('file:///Users/zenray/Library/Fonts/SourceSerif4_36pt-SemiBoldItalic.ttf') format('truetype'); }
+  @font-face { font-family: 'zr_src4_36pt_700_rom'; src: url('file:///Users/zenray/Library/Fonts/SourceSerif4_36pt-Bold.ttf') format('truetype'); }
+  @font-face { font-family: 'zr_src4_36pt_700_ita'; src: url('file:///Users/zenray/Library/Fonts/SourceSerif4_36pt-BoldItalic.ttf') format('truetype'); }
+  @font-face { font-family: 'zr_src4_36pt_800_rom'; src: url('file:///Users/zenray/Library/Fonts/SourceSerif4_36pt-ExtraBold.ttf') format('truetype'); }
+  @font-face { font-family: 'zr_src4_36pt_800_ita'; src: url('file:///Users/zenray/Library/Fonts/SourceSerif4_36pt-ExtraBoldItalic.ttf') format('truetype'); }
+  @font-face { font-family: 'zr_src4_36pt_900_rom'; src: url('file:///Users/zenray/Library/Fonts/SourceSerif4_36pt-Black.ttf') format('truetype'); }
+  @font-face { font-family: 'zr_src4_36pt_900_ita'; src: url('file:///Users/zenray/Library/Fonts/SourceSerif4_36pt-BlackItalic.ttf') format('truetype'); }
+  @font-face { font-family: 'zr_src4_48pt_200_rom'; src: url('file:///Users/zenray/Library/Fonts/SourceSerif4_48pt-ExtraLight.ttf') format('truetype'); }
+  @font-face { font-family: 'zr_src4_48pt_200_ita'; src: url('file:///Users/zenray/Library/Fonts/SourceSerif4_48pt-ExtraLightItalic.ttf') format('truetype'); }
+  @font-face { font-family: 'zr_src4_48pt_300_rom'; src: url('file:///Users/zenray/Library/Fonts/SourceSerif4_48pt-Light.ttf') format('truetype'); }
+  @font-face { font-family: 'zr_src4_48pt_300_ita'; src: url('file:///Users/zenray/Library/Fonts/SourceSerif4_48pt-LightItalic.ttf') format('truetype'); }
+  @font-face { font-family: 'zr_src4_48pt_400_rom'; src: url('file:///Users/zenray/Library/Fonts/SourceSerif4_48pt-Regular.ttf') format('truetype'); }
+  @font-face { font-family: 'zr_src4_48pt_400_ita'; src: url('file:///Users/zenray/Library/Fonts/SourceSerif4_48pt-Italic.ttf') format('truetype'); }
+  @font-face { font-family: 'zr_src4_48pt_500_rom'; src: url('file:///Users/zenray/Library/Fonts/SourceSerif4_48pt-Medium.ttf') format('truetype'); }
+  @font-face { font-family: 'zr_src4_48pt_500_ita'; src: url('file:///Users/zenray/Library/Fonts/SourceSerif4_48pt-MediumItalic.ttf') format('truetype'); }
+  @font-face { font-family: 'zr_src4_48pt_600_rom'; src: url('file:///Users/zenray/Library/Fonts/SourceSerif4_48pt-SemiBold.ttf') format('truetype'); }
+  @font-face { font-family: 'zr_src4_48pt_600_ita'; src: url('file:///Users/zenray/Library/Fonts/SourceSerif4_48pt-SemiBoldItalic.ttf') format('truetype'); }
+  @font-face { font-family: 'zr_src4_48pt_700_rom'; src: url('file:///Users/zenray/Library/Fonts/SourceSerif4_48pt-Bold.ttf') format('truetype'); }
+  @font-face { font-family: 'zr_src4_48pt_700_ita'; src: url('file:///Users/zenray/Library/Fonts/SourceSerif4_48pt-BoldItalic.ttf') format('truetype'); }
+  @font-face { font-family: 'zr_src4_48pt_800_rom'; src: url('file:///Users/zenray/Library/Fonts/SourceSerif4_48pt-ExtraBold.ttf') format('truetype'); }
+  @font-face { font-family: 'zr_src4_48pt_800_ita'; src: url('file:///Users/zenray/Library/Fonts/SourceSerif4_48pt-ExtraBoldItalic.ttf') format('truetype'); }
+  @font-face { font-family: 'zr_src4_48pt_900_rom'; src: url('file:///Users/zenray/Library/Fonts/SourceSerif4_48pt-Black.ttf') format('truetype'); }
+  @font-face { font-family: 'zr_src4_48pt_900_ita'; src: url('file:///Users/zenray/Library/Fonts/SourceSerif4_48pt-BlackItalic.ttf') format('truetype'); }
+
+  :root {
+    /* 12 October 2026 : Parametres HDA Categorie 1 : Echelle et Geometrie (8 max) */
+    --hda-size-display: 42px;
+    --hda-size-specimen: 28px;
+    --hda-size-lead: 21px;
+    --hda-size-body: 17px;
+    --hda-lh-body: 1.55;
+    --hda-ls-display: -0.015em;
+    --hda-opsz: 18;
+    --hda-custom-wght: 350;
+
+    /* 12 October 2026 : Jetons de theme (pilotes par Categorie 2) */
+    --bg-page: #FAF8F5;
+    --bg-card: #FFFFFF;
+    --bg-subtle: #F2EFE9;
+    --bg-badge: #EAE5DC;
+    --text-main: #181715;
+    --text-muted: #68645E;
+    --text-faint: #969188;
+    --border-color: #E2DDD3;
+    --accent: #B85A28;
+    --accent-soft: rgba(184, 90, 40, 0.10);
+    --guide-line: rgba(184, 90, 40, 0.35);
+  }
+
+  body[data-theme="pure_white"] {
+    --bg-page: #FFFFFF;
+    --bg-card: #FAFAFA;
+    --bg-subtle: #F3F3F3;
+    --bg-badge: #E8E8E8;
+    --text-main: #111111;
+    --text-muted: #5E5E5E;
+    --text-faint: #8E8E8E;
+    --border-color: #E4E4E4;
+  }
+
+  body[data-theme="dark_obsidian"] {
+    --bg-page: #111110;
+    --bg-card: #181816;
+    --bg-subtle: #20201D;
+    --bg-badge: #2A2A26;
+    --text-main: #F2EFE9;
+    --text-muted: #A39E95;
+    --text-faint: #6E6A63;
+    --border-color: #2B2A27;
+    --accent: #E07A47;
+    --accent-soft: rgba(224, 122, 71, 0.14);
+    --guide-line: rgba(224, 122, 71, 0.40);
+  }
+
+  body[data-theme="warm_ink"] {
+    --bg-page: #191614;
+    --bg-card: #221E1B;
+    --bg-subtle: #2B2622;
+    --bg-badge: #36302B;
+    --text-main: #EFE8DE;
+    --text-muted: #B0A598;
+    --text-faint: #7D7368;
+    --border-color: #352F2A;
+    --accent: #DFA06B;
+    --accent-soft: rgba(223, 160, 107, 0.14);
+  }
+
+  * { box-sizing: border-box; }
+
+  body {
+    margin: 0;
+    padding: 0;
+    background: var(--bg-page);
+    color: var(--text-main);
+    font-family: var(--font-sans);
+    font-weight: 400;
+    -webkit-font-smoothing: antialiased;
+    transition: background 0.15s ease, color 0.15s ease;
+  }
+
+  .num-serif {
+    font-family: 'zr_anth_400_rom', serif;
+    font-weight: 400;
+    font-variant-numeric: tabular-nums;
+  }
+
+  /* Barre d'atelier HDA collante en haut */
+  .hda-panel {
+    position: sticky;
+    top: 0;
+    z-index: 100;
+    background: color-mix(in srgb, var(--bg-card) 92%, transparent);
+    backdrop-filter: blur(16px);
+    -webkit-backdrop-filter: blur(16px);
+    border-bottom: 1px solid var(--border-color);
+    padding: 14px 28px;
+  }
+
+  .hda-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 16px;
+    flex-wrap: wrap;
+    margin-bottom: 12px;
+  }
+
+  .hda-title-group {
+    display: flex;
+    align-items: baseline;
+    gap: 12px;
+    flex-wrap: wrap;
+  }
+
+  .hda-badge {
+    font-family: var(--font-mono);
+    font-size: 11px;
+    padding: 3px 8px;
+    border-radius: 6px;
+    background: var(--accent-soft);
+    color: var(--accent);
+    border: 1px solid color-mix(in srgb, var(--accent) 30%, transparent);
+  }
+
+  .hda-title {
+    font-family: 'zr_anth_var_rom', serif;
+    font-variation-settings: "wght" 350;
+    font-size: 20px;
+    margin: 0;
+  }
+
+  .hda-actions {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    flex-wrap: wrap;
+  }
+
+  button.hda-btn {
+    font-family: var(--font-sans);
+    font-weight: 400;
+    font-size: 12px;
+    padding: 6px 12px;
+    border-radius: 8px;
+    border: 1px solid var(--border-color);
+    background: var(--bg-subtle);
+    color: var(--text-main);
+    cursor: pointer;
+    transition: all 0.12s ease;
+  }
+
+  button.hda-btn:hover {
+    border-color: var(--accent);
+  }
+
+  button.hda-btn.primary {
+    background: var(--accent);
+    color: #FFFFFF;
+    border-color: var(--accent);
+  }
+
+  .hda-controls-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(185px, 1fr));
+    gap: 10px 16px;
+    align-items: end;
+  }
+
+  .hda-Details-closed .hda-controls-body {
+    display: none;
+  }
+
+  .ctrl-item {
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+  }
+
+  .ctrl-label {
+    display: flex;
+    justify-content: space-between;
+    font-size: 11px;
+    color: var(--text-muted);
+  }
+
+  .ctrl-val {
+    font-family: 'zr_anth_400_rom', serif;
+    color: var(--text-main);
+    font-weight: 400;
+  }
+
+  input[type="range"] {
+    width: 100%;
+    accent-color: var(--accent);
+    height: 4px;
+    cursor: pointer;
+  }
+
+  select.hda-select, input.hda-text {
+    font-family: var(--font-sans);
+    font-size: 12px;
+    padding: 5px 8px;
+    border-radius: 6px;
+    border: 1px solid var(--border-color);
+    background: var(--bg-page);
+    color: var(--text-main);
+    width: 100%;
+  }
+
+  /* Conteneur principal pleine largeur haute resolution */
+  .sheet-container {
+    max-width: 1840px;
+    margin: 0 auto;
+    padding: 28px 28px 96px;
+  }
+
+  .section-block {
+    margin-bottom: 48px;
+  }
+
+  .section-head {
+    display: flex;
+    align-items: baseline;
+    justify-content: space-between;
+    gap: 16px;
+    border-bottom: 1px solid var(--border-color);
+    padding-bottom: 10px;
+    margin-bottom: 20px;
+    flex-wrap: wrap;
+  }
+
+  .section-title {
+    font-family: 'zr_anth_var_rom', serif;
+    font-variation-settings: "wght" 350;
+    font-size: 24px;
+    margin: 0;
+  }
+
+  .section-sub {
+    font-size: 13px;
+    color: var(--text-muted);
+  }
+
+  /* Grille 3 colonnes pour les 3 familles */
+  .tri-grid {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 18px;
+  }
+
+  .col-header-sticky {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 18px;
+    margin-bottom: 14px;
+  }
+
+  .fam-header-card {
+    background: var(--bg-card);
+    border: 1px solid var(--border-color);
+    border-radius: 12px;
+    padding: 16px 20px;
+  }
+
+  .fam-title-row {
+    display: flex;
+    align-items: baseline;
+    justify-content: space-between;
+    gap: 8px;
+    margin-bottom: 6px;
+  }
+
+  .fam-name {
+    font-size: 16px;
+    font-weight: 400;
+    color: var(--text-main);
+  }
+
+  .fam-tag {
+    font-family: var(--font-mono);
+    font-size: 11px;
+    color: var(--text-muted);
+    background: var(--bg-subtle);
+    padding: 2px 8px;
+    border-radius: 99px;
+  }
+
+  .fam-specs {
+    font-size: 12px;
+    color: var(--text-muted);
+    line-height: 1.5;
+  }
+
+  .metrics-bar {
+    margin-top: 10px;
+    padding-top: 10px;
+    border-top: 1px dashed var(--border-color);
+    display: flex;
+    gap: 14px;
+    flex-wrap: wrap;
+    font-size: 12px;
+    color: var(--text-muted);
+  }
+
+  .metrics-bar strong {
+    font-family: 'zr_anth_400_rom', serif;
+    font-weight: 400;
+    color: var(--text-main);
+  }
+
+  /* Lignes de comparaison de graisse */
+  .weight-band {
+    background: var(--bg-card);
+    border: 1px solid var(--border-color);
+    border-radius: 14px;
+    padding: 18px 20px;
+    margin-bottom: 14px;
+  }
+
+  .weight-band.highlight-350 {
+    border-color: var(--accent);
+    box-shadow: 0 0 0 1px var(--accent-soft);
+  }
+
+  .weight-band-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 12px;
+    margin-bottom: 14px;
+    padding-bottom: 8px;
+    border-bottom: 1px solid var(--bg-subtle);
+    flex-wrap: wrap;
+  }
+
+  .weight-title {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+  }
+
+  .weight-num {
+    font-family: 'zr_anth_400_rom', serif;
+    font-size: 18px;
+    padding: 2px 10px;
+    border-radius: 6px;
+    background: var(--bg-badge);
+    color: var(--text-main);
+  }
+
+  .weight-name {
+    font-size: 14px;
+    color: var(--text-main);
+  }
+
+  .weight-status {
+    font-family: var(--font-mono);
+    font-size: 11px;
+    color: var(--text-muted);
+  }
+
+  .cell-specimen {
+    padding: 12px 14px;
+    border-radius: 10px;
+    background: var(--bg-page);
+    border: 1px solid var(--border-color);
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    overflow: hidden;
+  }
+
+  .cell-specimen.missing {
+    opacity: 0.45;
+    background: var(--bg-subtle);
+    justify-content: center;
+    align-items: center;
+    min-height: 120px;
+    font-size: 12px;
+    color: var(--text-muted);
+    text-align: center;
+  }
+
+  .cell-top-meta {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 8px;
+    font-family: var(--font-mono);
+    font-size: 10.5px;
+    color: var(--text-faint);
+  }
+
+  .spec-headline {
+    font-size: var(--hda-size-specimen);
+    line-height: 1.2;
+    letter-spacing: var(--hda-ls-display);
+    margin: 2px 0;
+    word-break: break-word;
+    position: relative;
+  }
+
+  body[data-guides="true"] .spec-headline {
+    background-image:
+      linear-gradient(to bottom, transparent calc(50% - 0.5px), var(--guide-line) calc(50% - 0.5px), var(--guide-line) calc(50% + 0.5px), transparent calc(50% + 0.5px)),
+      linear-gradient(to bottom, transparent calc(82% - 0.5px), var(--guide-line) calc(82% - 0.5px), var(--guide-line) calc(82% + 0.5px), transparent calc(82% + 0.5px));
+  }
+
+  .spec-alphabet {
+    font-size: 14px;
+    line-height: 1.35;
+    color: var(--text-muted);
+    letter-spacing: 0.01em;
+  }
+
+  .spec-body {
+    font-size: var(--hda-size-body);
+    line-height: var(--hda-lh-body);
+    color: var(--text-main);
+    margin-top: 2px;
+  }
+
+  /* Tableau recapitulatif des graisses disponibles */
+  .matrix-table {
+    width: 100%;
+    border-collapse: collapse;
+    font-size: 13px;
+    background: var(--bg-card);
+    border: 1px solid var(--border-color);
+    border-radius: 12px;
+    overflow: hidden;
+  }
+
+  .matrix-table th, .matrix-table td {
+    padding: 10px 14px;
+    text-align: left;
+    border-bottom: 1px solid var(--border-color);
+  }
+
+  .matrix-table th {
+    background: var(--bg-subtle);
+    color: var(--text-muted);
+    font-weight: 400;
+    font-size: 12px;
+  }
+
+  .pill-ok {
+    display: inline-block;
+    padding: 2px 8px;
+    border-radius: 99px;
+    font-size: 11px;
+    background: rgba(46, 133, 85, 0.14);
+    color: #2E8555;
+    font-family: var(--font-mono);
+  }
+
+  body[data-theme="dark_obsidian"] .pill-ok,
+  body[data-theme="warm_ink"] .pill-ok {
+    color: #68D391;
+  }
+
+  .pill-var {
+    display: inline-block;
+    padding: 2px 8px;
+    border-radius: 99px;
+    font-size: 11px;
+    background: var(--accent-soft);
+    color: var(--accent);
+    font-family: var(--font-mono);
+  }
+
+  .pill-no {
+    display: inline-block;
+    padding: 2px 8px;
+    border-radius: 99px;
+    font-size: 11px;
+    background: var(--bg-subtle);
+    color: var(--text-faint);
+    font-family: var(--font-mono);
+  }
+
+  /* Banc d'essai editorial */
+  .editorial-card {
+    background: var(--bg-card);
+    border: 1px solid var(--border-color);
+    border-radius: 14px;
+    padding: 24px;
+  }
+
+  .ed-kicker {
+    font-family: var(--font-mono);
+    font-size: 11px;
+    text-transform: uppercase;
+    letter-spacing: 0.08em;
+    color: var(--accent);
+    margin-bottom: 8px;
+  }
+
+  .ed-h1 {
+    font-size: var(--hda-size-display);
+    line-height: 1.12;
+    letter-spacing: var(--hda-ls-display);
+    margin: 0 0 14px 0;
+  }
+
+  .ed-lead {
+    font-size: var(--hda-size-lead);
+    line-height: 1.42;
+    color: var(--text-muted);
+    margin: 0 0 18px 0;
+  }
+
+  .ed-body {
+    font-size: var(--hda-size-body);
+    line-height: var(--hda-lh-body);
+    margin: 0 0 16px 0;
+  }
+
+  .ed-quote {
+    margin: 16px 0;
+    padding: 10px 16px;
+    border-left: 2px solid var(--accent);
+    font-size: calc(var(--hda-size-body) * 1.08);
+    line-height: 1.48;
+    color: var(--text-muted);
+  }
+
+  .ed-kpi-row {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 10px;
+    padding-top: 14px;
+    border-top: 1px solid var(--border-color);
+  }
+
+  .ed-kpi-num {
+    font-size: 26px;
+    line-height: 1.1;
+  }
+
+  .ed-kpi-label {
+    font-family: var(--font-sans);
+    font-size: 11px;
+    color: var(--text-muted);
+    margin-top: 3px;
+  }
+
+  @media (max-width: 1100px) {
+    .tri-grid, .col-header-sticky {
+      grid-template-columns: 1fr;
+    }
+  }
+</style>
+</head>
+<body data-theme="editorial_light" data-guides="false">
+
+<!-- BARRE HDA PARAMETRIQUE -->
+<header class="hda-panel" id="hdaPanel">
+  <div class="hda-header">
+    <div class="hda-title-group">
+      <span class="hda-badge">HDA V_001 · 12 October 2026</span>
+      <h1 class="hda-title">Comparatif Typographique : Anthropic Serif vs Newsreader vs Source Serif <span class="num-serif">4</span></h1>
+    </div>
+    <div class="hda-actions">
+      <button class="hda-btn" id="btnTogglePanel" type="button">Masquer / Afficher les curseurs</button>
+      <button class="hda-btn" id="btnReset" type="button">Réinitialiser (défauts V_001)</button>
+      <button class="hda-btn primary" id="btnCopyPrompt" type="button">Copier les valeurs pour le prompt</button>
+    </div>
+  </div>
+
+  <div class="hda-controls-body">
+    <!-- Categorie 1 : Echelle & Geometrie (8 parametres) -->
+    <div class="hda-controls-grid" style="margin-bottom: 10px;">
+      <div class="ctrl-item">
+        <div class="ctrl-label"><span>1. Taille Titre (Display)</span><span class="ctrl-val" id="valDisplay">42 px</span></div>
+        <input type="range" id="rngDisplay" min="22" max="84" step="1" value="42">
+      </div>
+      <div class="ctrl-item">
+        <div class="ctrl-label"><span>2. Taille Spécimen Graisses</span><span class="ctrl-val" id="valSpecimen">28 px</span></div>
+        <input type="range" id="rngSpecimen" min="16" max="56" step="1" value="28">
+      </div>
+      <div class="ctrl-item">
+        <div class="ctrl-label"><span>3. Taille Chapô (Lead)</span><span class="ctrl-val" id="valLead">21 px</span></div>
+        <input type="range" id="rngLead" min="14" max="36" step="1" value="21">
+      </div>
+      <div class="ctrl-item">
+        <div class="ctrl-label"><span>4. Taille Corps (Body)</span><span class="ctrl-val" id="valBody">17 px</span></div>
+        <input type="range" id="rngBody" min="12" max="28" step="0.5" value="17">
+      </div>
+      <div class="ctrl-item">
+        <div class="ctrl-label"><span>5. Interligne Corps</span><span class="ctrl-val" id="valLh">1.55</span></div>
+        <input type="range" id="rngLh" min="1.15" max="2.00" step="0.05" value="1.55">
+      </div>
+      <div class="ctrl-item">
+        <div class="ctrl-label"><span>6. Approche Titre (em)</span><span class="ctrl-val" id="valLs">-0.015 em</span></div>
+        <input type="range" id="rngLs" min="-0.05" max="0.06" step="0.005" value="-0.015">
+      </div>
+      <div class="ctrl-item">
+        <div class="ctrl-label"><span>7. Axe optique Variable (opsz)</span><span class="ctrl-val" id="valOpsz">18 pt</span></div>
+        <input type="range" id="rngOpsz" min="8" max="60" step="1" value="18">
+      </div>
+      <div class="ctrl-item">
+        <div class="ctrl-label"><span>8. Graisse Variable libre (wght)</span><span class="ctrl-val" id="valWght">350</span></div>
+        <input type="range" id="rngWght" min="200" max="900" step="10" value="350">
+      </div>
+    </div>
+
+    <!-- Categorie 2 : Affichage, Coupes optiques et Texte (7 parametres) -->
+    <div class="hda-controls-grid">
+      <div class="ctrl-item">
+        <div class="ctrl-label"><span>Thème de lecture</span></div>
+        <select class="hda-select" id="selTheme">
+          <option value="editorial_light">Clair éditorial (#FAF8F5)</option>
+          <option value="pure_white">Blanc pur (#FFFFFF)</option>
+          <option value="dark_obsidian">Sombre obsidienne (#111110)</option>
+          <option value="warm_ink">Encre chaude (#191614)</option>
+        </select>
+      </div>
+      <div class="ctrl-item">
+        <div class="ctrl-label"><span>Source des graisses (300 à 800)</span></div>
+        <select class="hda-select" id="selRenderMode">
+          <option value="static_ttf">Fichiers TTF statiques dédiés</option>
+          <option value="variable_axis">Fontes Variables (axe wght + opsz)</option>
+        </select>
+      </div>
+      <div class="ctrl-item">
+        <div class="ctrl-label"><span>Coupe statique Newsreader</span></div>
+        <select class="hda-select" id="selNewsOpsz">
+          <option value="9pt">Newsreader 9pt (Micro / Légende)</option>
+          <option value="14pt">Newsreader 14pt (Corps texte)</option>
+          <option value="24pt" selected>Newsreader 24pt (Sous-titre / Polyvalent)</option>
+          <option value="36pt">Newsreader 36pt (Titre)</option>
+          <option value="60pt">Newsreader 60pt (Display fin)</option>
+        </select>
+      </div>
+      <div class="ctrl-item">
+        <div class="ctrl-label"><span>Coupe statique Source Serif 4</span></div>
+        <select class="hda-select" id="selSrcOpsz">
+          <option value="base" selected>Source Serif 4 Base (Corps)</option>
+          <option value="18pt">Source Serif 4 18pt (Sous-titre)</option>
+          <option value="36pt">Source Serif 4 36pt (Titre)</option>
+          <option value="48pt">Source Serif 4 48pt (Display)</option>
+        </select>
+      </div>
+      <div class="ctrl-item">
+        <div class="ctrl-label"><span>Filtre de style</span></div>
+        <select class="hda-select" id="selStyleFilter">
+          <option value="both" selected>Romain + Italique (toutes les coupes)</option>
+          <option value="roman">Romain uniquement</option>
+          <option value="italic">Italique uniquement</option>
+        </select>
+      </div>
+      <div class="ctrl-item">
+        <div class="ctrl-label"><span>Repères hauteur d'x & base</span></div>
+        <select class="hda-select" id="selGuides">
+          <option value="false" selected>Masqués</option>
+          <option value="true">Affichés sur les spécimens</option>
+        </select>
+      </div>
+      <div class="ctrl-item" style="grid-column: span 2;">
+        <div class="ctrl-label"><span>Texte spécimen synchronisé (ou cliquer directement sur un texte pour l'éditer)</span></div>
+        <input type="text" class="hda-text" id="inpHeadline" value="L'architecture procédurale et la lumière du soir">
+      </div>
+    </div>
+  </div>
+</header>
+
+<main class="sheet-container">
+
+  <!-- SECTION 1 : EN-TETES DES 3 FAMILLES & MESURES EN DIRECT -->
+  <section class="section-block">
+    <div class="section-head">
+      <h2 class="section-title"><span class="num-serif">1.</span> Les <span class="num-serif">3</span> familles installées et leurs mesures réelles à taille égale</h2>
+      <div class="section-sub">Chasse et hauteur d'x mesurées en direct dans le DOM au corps courant (<span class="num-serif" id="lblCurrentBody">17</span> px)</div>
+    </div>
+
+    <div class="col-header-sticky">
+      <div class="fam-header-card">
+        <div class="fam-title-row">
+          <span class="fam-name">Anthropic Serif</span>
+          <span class="fam-tag">14 TTF statiques + 2 WOFF2 var</span>
+        </div>
+        <div class="fam-specs">
+          Graisses statiques : <span class="num-serif">300</span> (Light) à <span class="num-serif">900</span> (Black), Romain & Italique.<br>
+          Variable : <span class="num-serif">300</span> à <span class="num-serif">900</span> (inclut la cote ZenRay <span class="num-serif">350</span>).
+        </div>
+        <div class="metrics-bar">
+          <span>Chasse à <span class="num-serif" data-bind="bodyPx">17</span>px : <strong id="mWidthAnth">... px</strong> (<span class="num-serif">100%</span> réf.)</span>
+          <span>Hauteur d'x relative : <strong id="mXhAnth">...</strong></span>
+        </div>
+      </div>
+
+      <div class="fam-header-card">
+        <div class="fam-title-row">
+          <span class="fam-name">Newsreader</span>
+          <span class="fam-tag">70 TTF statiques + 2 TTF var</span>
+        </div>
+        <div class="fam-specs">
+          Graisses statiques : <span class="num-serif">200</span> (ExtraLight) à <span class="num-serif">800</span> (ExtraBold), en <span class="num-serif">5</span> tailles optiques (<span class="num-serif">9, 14, 24, 36, 60</span> pt).<br>
+          Variable : <span class="num-serif">200</span> à <span class="num-serif">800</span>, axe optique <span class="num-serif">6</span> à <span class="num-serif">72</span> pt.
+        </div>
+        <div class="metrics-bar">
+          <span>Chasse à <span class="num-serif" data-bind="bodyPx">17</span>px : <strong id="mWidthNews">... px</strong> (<strong id="mRatioNews">...%</strong>)</span>
+          <span>Hauteur d'x relative : <strong id="mXhNews">...</strong></span>
+        </div>
+      </div>
+
+      <div class="fam-header-card">
+        <div class="fam-title-row">
+          <span class="fam-name">Source Serif <span class="num-serif">4</span></span>
+          <span class="fam-tag">64 TTF statiques + 2 TTF var</span>
+        </div>
+        <div class="fam-specs">
+          Graisses statiques : <span class="num-serif">200</span> (ExtraLight) à <span class="num-serif">900</span> (Black), en <span class="num-serif">4</span> tailles optiques (Base, <span class="num-serif">18, 36, 48</span> pt).<br>
+          Variable : <span class="num-serif">200</span> à <span class="num-serif">900</span>, axe optique <span class="num-serif">8</span> à <span class="num-serif">60</span> pt.
+        </div>
+        <div class="metrics-bar">
+          <span>Chasse à <span class="num-serif" data-bind="bodyPx">17</span>px : <strong id="mWidthSrc4">... px</strong> (<strong id="mRatioSrc4">...%</strong>)</span>
+          <span>Hauteur d'x relative : <strong id="mXhSrc4">...</strong></span>
+        </div>
+      </div>
+    </div>
+
+    <!-- TABLEAU SYNTHETIQUE D'INTERSECTION DES GRAISSES -->
+    <table class="matrix-table">
+      <thead>
+        <tr>
+          <th>Graisse / Coupe</th>
+          <th>Poids CSS</th>
+          <th>Anthropic Serif</th>
+          <th>Newsreader</th>
+          <th>Source Serif 4</th>
+          <th>Statut d'intersection</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>ExtraLight &amp; ExtraLight Italic</td>
+          <td class="num-serif">200 / 200i</td>
+          <td><span class="pill-no">Absent (débute à 300)</span></td>
+          <td><span class="pill-ok">TTF Statique (5 opsz) + Var</span></td>
+          <td><span class="pill-ok">TTF Statique (4 opsz) + Var</span></td>
+          <td>Commun Newsreader &amp; Source Serif 4</td>
+        </tr>
+        <tr>
+          <td><strong>Light &amp; Light Italic</strong></td>
+          <td class="num-serif">300 / 300i</td>
+          <td><span class="pill-ok">TTF Statique + Var</span></td>
+          <td><span class="pill-ok">TTF Statique (5 opsz) + Var</span></td>
+          <td><span class="pill-ok">TTF Statique (4 opsz) + Var</span></td>
+          <td><strong>EN COMMUN AUX 3 (Romain + Italique)</strong></td>
+        </tr>
+        <tr>
+          <td><strong>Cote Éditoriale ZenRay (Variable)</strong></td>
+          <td class="num-serif">350 / 350i</td>
+          <td><span class="pill-var">Variable 350</span></td>
+          <td><span class="pill-var">Variable 350</span></td>
+          <td><span class="pill-var">Variable 350</span></td>
+          <td><strong>EN COMMUN AUX 3 (via fonte Variable)</strong></td>
+        </tr>
+        <tr>
+          <td><strong>Regular &amp; Italic</strong></td>
+          <td class="num-serif">400 / 400i</td>
+          <td><span class="pill-ok">TTF Statique + Var</span></td>
+          <td><span class="pill-ok">TTF Statique (5 opsz) + Var</span></td>
+          <td><span class="pill-ok">TTF Statique (4 opsz) + Var</span></td>
+          <td><strong>EN COMMUN AUX 3 (Romain + Italique)</strong></td>
+        </tr>
+        <tr>
+          <td><strong>Medium &amp; Medium Italic</strong></td>
+          <td class="num-serif">500 / 500i</td>
+          <td><span class="pill-ok">TTF Statique + Var</span></td>
+          <td><span class="pill-ok">TTF Statique (5 opsz) + Var</span></td>
+          <td><span class="pill-ok">TTF Statique (4 opsz) + Var</span></td>
+          <td><strong>EN COMMUN AUX 3 (Romain + Italique)</strong></td>
+        </tr>
+        <tr>
+          <td><strong>SemiBold &amp; SemiBold Italic</strong></td>
+          <td class="num-serif">600 / 600i</td>
+          <td><span class="pill-ok">TTF Statique + Var</span></td>
+          <td><span class="pill-ok">TTF Statique (5 opsz) + Var</span></td>
+          <td><span class="pill-ok">TTF Statique (4 opsz) + Var</span></td>
+          <td><strong>EN COMMUN AUX 3 (Romain + Italique)</strong></td>
+        </tr>
+        <tr>
+          <td><strong>Bold &amp; Bold Italic</strong></td>
+          <td class="num-serif">700 / 700i</td>
+          <td><span class="pill-ok">TTF Statique + Var</span></td>
+          <td><span class="pill-ok">TTF Statique (5 opsz) + Var</span></td>
+          <td><span class="pill-ok">TTF Statique (4 opsz) + Var</span></td>
+          <td><strong>EN COMMUN AUX 3 (Romain + Italique)</strong></td>
+        </tr>
+        <tr>
+          <td><strong>ExtraBold &amp; ExtraBold Italic</strong></td>
+          <td class="num-serif">800 / 800i</td>
+          <td><span class="pill-ok">TTF Statique + Var</span></td>
+          <td><span class="pill-ok">TTF Statique (5 opsz) + Var</span></td>
+          <td><span class="pill-ok">TTF Statique (4 opsz) + Var</span></td>
+          <td><strong>EN COMMUN AUX 3 (Romain + Italique)</strong></td>
+        </tr>
+        <tr>
+          <td>Black &amp; Black Italic</td>
+          <td class="num-serif">900 / 900i</td>
+          <td><span class="pill-ok">TTF Statique + Var</span></td>
+          <td><span class="pill-no">Absent (plafonne à 800)</span></td>
+          <td><span class="pill-ok">TTF Statique (4 opsz) + Var</span></td>
+          <td>Commun Anthropic Serif &amp; Source Serif 4</td>
+        </tr>
+      </tbody>
+    </table>
+  </section>
+
+  <!-- SECTION 2 : BANC D'ESSAI EDITORIAL COTE A COTE -->
+  <section class="section-block">
+    <div class="section-head">
+      <h2 class="section-title"><span class="num-serif">2.</span> Mise en situation éditoriale (Titre, Chapô, Corps, Citation Italique &amp; Chiffres)</h2>
+      <div class="section-sub">Rendu avec la graisse variable libre (<span class="num-serif" id="lblEdWght">350</span>) pour le titre/corps et Regular <span class="num-serif">400</span> pour les nombres</div>
+    </div>
+    <div class="tri-grid" id="editorialGrid"></div>
+  </section>
+
+  <!-- SECTION 3 : TOUTES LES DECLINAISONS DE GRAISSES EN COMMUN (300, 350 var, 400, 500, 600, 700, 800 , ROMAIN & ITALIQUE) -->
+  <section class="section-block">
+    <div class="section-head">
+      <h2 class="section-title"><span class="num-serif">3.</span> Toutes les déclinaisons de graisses en commun (<span class="num-serif">300</span> à <span class="num-serif">800</span>, Romain &amp; Italique + Variable <span class="num-serif">350</span>)</h2>
+      <div class="section-sub">Chaque cellule charge son fichier TTF dédié dans <code>/Users/zenray/Library/Fonts/</code> (ou l'axe variable si sélectionné)</div>
+    </div>
+    <div id="commonWeightsContainer"></div>
+  </section>
+
+  <!-- SECTION 4 : GRAISSES EXTREMES (200 EXTRALIGHT & 900 BLACK) -->
+  <section class="section-block">
+    <div class="section-head">
+      <h2 class="section-title"><span class="num-serif">4.</span> Extrêmes hors-intersection : ExtraLight (<span class="num-serif">200</span>) et Black (<span class="num-serif">900</span>)</h2>
+      <div class="section-sub">Pour visualiser où Newsreader descend plus fin (<span class="num-serif">200</span>) et où Anthropic Serif &amp; Source Serif <span class="num-serif">4</span> montent plus noir (<span class="num-serif">900</span>)</div>
+    </div>
+    <div id="extremeWeightsContainer"></div>
+  </section>
+
+  <!-- SECTION 5 : COMPARAISON DES TAILLES OPTIQUES STATIQUES (OPSZ) -->
+  <section class="section-block">
+    <div class="section-head">
+      <h2 class="section-title"><span class="num-serif">5.</span> Comparaison des tailles optiques statiques (Regular <span class="num-serif">400</span> à travers les coupes <code>pt</code>)</h2>
+      <div class="section-sub">Newsreader (<span class="num-serif">9pt, 14pt, 24pt, 36pt, 60pt</span>) et Source Serif <span class="num-serif">4</span> (<span class="num-serif">Base, 18pt, 36pt, 48pt</span>) face à Anthropic Serif</div>
+    </div>
+    <div id="opticalSizesContainer"></div>
+  </section>
+
+</main>
+
+<!-- SONDE INVISIBLE POUR MESURES EXACTES DE CHASSE ET HAUTEUR D'X -->
+<div id="metricProbeWrap" style="position:fixed; left:-9999px; top:-9999px; visibility:hidden; pointer-events:none; white-space:nowrap;">
+  <span id="probeAnth">Chaque glyphe dessine un équilibre entre le plein du fût 0123456789</span>
+  <span id="probeNews">Chaque glyphe dessine un équilibre entre le plein du fût 0123456789</span>
+  <span id="probeSrc4">Chaque glyphe dessine un équilibre entre le plein du fût 0123456789</span>
+</div>
+
+<script>
+// 12 October 2026 : Etat HDA initial (egal aux valeurs de _params.json)
+const DEFAULTS = {"version": "V_001", "created": "12 October 2026", "description": "Planche comparative HDA des 3 familles Serif (Anthropic Serif, Newsreader, Source Serif 4) sur toutes les graisses communes, tailles optiques et axes variables.", "scale_and_geometry": {"size_display_px": 42, "size_specimen_px": 28, "size_lead_px": 21, "size_body_px": 17, "line_height_body": 1.55, "letter_spacing_display_em": -0.015, "variable_opsz": 18, "variable_custom_wght": 350}, "display_and_theme": {"theme": "editorial_light", "render_mode": "static_ttf", "newsreader_optical_cut": "24pt", "sourceserif_optical_cut": "base", "style_filter": "both", "show_metrics_guides": false, "headline_sample": "L'architecture procédurale et la lumière du soir", "body_sample": "Chaque glyphe dessine un équilibre entre le plein du fût, la finesse de la liaison et l'ouverture du contre-poinçon. À taille égale, la hauteur d'x gouverne la lisibilité réelle bien plus que le corps nominal en pixels : 123 456 789,00 €, « Vérité & mesure »."}};
+
+const state = {
+  sizeDisplay: DEFAULTS.scale_and_geometry.size_display_px,
+  sizeSpecimen: DEFAULTS.scale_and_geometry.size_specimen_px,
+  sizeLead: DEFAULTS.scale_and_geometry.size_lead_px,
+  sizeBody: DEFAULTS.scale_and_geometry.size_body_px,
+  lhBody: DEFAULTS.scale_and_geometry.line_height_body,
+  lsDisplay: DEFAULTS.scale_and_geometry.letter_spacing_display_em,
+  opsz: DEFAULTS.scale_and_geometry.variable_opsz,
+  customWght: DEFAULTS.scale_and_geometry.variable_custom_wght,
+  theme: DEFAULTS.display_and_theme.theme,
+  renderMode: DEFAULTS.display_and_theme.render_mode,
+  newsOpsz: DEFAULTS.display_and_theme.newsreader_optical_cut,
+  srcOpsz: DEFAULTS.display_and_theme.sourceserif_optical_cut,
+  styleFilter: DEFAULTS.display_and_theme.style_filter,
+  guides: DEFAULTS.display_and_theme.show_metrics_guides,
+  headlineSample: DEFAULTS.display_and_theme.headline_sample,
+  bodySample: DEFAULTS.display_and_theme.body_sample
+};
+
+const ALPHABET_SAMPLE = "ABCDEFGHIJKLMNPQRSTUVWXYZ abcdefghijklmnpqrstuvwxyz 0123456789 € $ % & ? ! « » ( )";
+
+const COMMON_WEIGHTS = [
+  { weight: 300, name: "Light", isVarOnly: false },
+  { weight: 350, name: "Cote ZenRay Éditoriale (Axe Variable)", isVarOnly: true },
+  { weight: 400, name: "Regular", isVarOnly: false },
+  { weight: 500, name: "Medium", isVarOnly: false },
+  { weight: 600, name: "SemiBold", isVarOnly: false },
+  { weight: 700, name: "Bold", isVarOnly: false },
+  { weight: 800, name: "ExtraBold", isVarOnly: false }
+];
+
+const EXTREME_WEIGHTS = [
+  { weight: 200, name: "ExtraLight", avail: { anth: false, news: true, src4: true } },
+  { weight: 900, name: "Black", avail: { anth: true, news: false, src4: true } }
+];
+
+function getFontSpec(famKey, weight, isItalic, forceVar) {
+  const useVar = forceVar || state.renderMode === "variable_axis";
+  const styleSuffix = isItalic ? "ita" : "rom";
+  const styleName = isItalic ? (weight === 400 ? "Italic" : "Italic") : "";
+  const wLabel = {
+    200: "ExtraLight", 300: "Light", 350: "Var350", 400: "Regular",
+    500: "Medium", 600: "SemiBold", 700: "Bold", 800: "ExtraBold", 900: "Black"
+  }[weight] || ("W" + weight);
+
+  if (famKey === "anth") {
+    if (useVar) {
+      const f = isItalic ? "AnthropicSerif-Italics.woff2" : "AnthropicSerif-Romans.woff2";
+      return {
+        cssFamily: `'zr_anth_var_${styleSuffix}', serif`,
+        cssSettings: `"wght" ${weight}`,
+        fileLabel: `${f} (wght=${weight})`
+      };
+    }
+    const fileW = isItalic ? (weight === 400 ? "Italic" : wLabel + "Italic") : wLabel;
+    return {
+      cssFamily: `'zr_anth_${weight}_${styleSuffix}', serif`,
+      cssSettings: "normal",
+      fileLabel: `AnthropicSerif-${fileW}.ttf`
+    };
+  }
+
+  if (famKey === "news") {
+    if (useVar) {
+      const f = isItalic ? "Newsreader-Italic-VariableFont_opsz,wght.ttf" : "Newsreader-VariableFont_opsz,wght.ttf";
+      return {
+        cssFamily: `'zr_news_var_${styleSuffix}', serif`,
+        cssSettings: `"wght" ${weight}, "opsz" ${state.opsz}`,
+        fileLabel: `${f} (wght=${weight}, opsz=${state.opsz})`
+      };
+    }
+    const cut = state.newsOpsz;
+    const fileW = isItalic ? (weight === 400 ? "Italic" : wLabel + "Italic") : wLabel;
+    return {
+      cssFamily: `'zr_news_${cut}_${weight}_${styleSuffix}', serif`,
+      cssSettings: "normal",
+      fileLabel: `Newsreader_${cut}-${fileW}.ttf`
+    };
+  }
+
+  if (famKey === "src4") {
+    if (useVar) {
+      const f = isItalic ? "SourceSerif4-Italic-VariableFont_opsz,wght.ttf" : "SourceSerif4-VariableFont_opsz,wght.ttf";
+      return {
+        cssFamily: `'zr_src4_var_${styleSuffix}', serif`,
+        cssSettings: `"wght" ${weight}, "opsz" ${state.opsz}`,
+        fileLabel: `${f} (wght=${weight}, opsz=${state.opsz})`
+      };
+    }
+    const cut = state.srcOpsz;
+    const prefix = cut === "base" ? "SourceSerif4" : `SourceSerif4_${cut}`;
+    const fileW = isItalic ? (weight === 400 ? "Italic" : wLabel + "Italic") : wLabel;
+    return {
+      cssFamily: `'zr_src4_${cut}_${weight}_${styleSuffix}', serif`,
+      cssSettings: "normal",
+      fileLabel: `${prefix}-${fileW}.ttf`
+    };
+  }
+}
+
+function buildSpecimenCell(famKey, famTitle, weight, isItalic, forceVar, isAvailable = true) {
+  if (!isAvailable) {
+    return `<div class="cell-specimen missing">
+      <div><strong>${famTitle}</strong> ne possède pas de coupe <span class="num-serif">${weight}</span> ${isItalic ? "Italique" : "Romain"}.</div>
+    </div>`;
+  }
+  const spec = getFontSpec(famKey, weight, isItalic, forceVar);
+  const fStyle = isItalic ? "italic" : "normal";
+  const fvs = spec.cssSettings !== "normal" ? `font-variation-settings: ${spec.cssSettings};` : "";
+  return `<div class="cell-specimen">
+    <div class="cell-top-meta">
+      <span>${famTitle} · ${weight}${isItalic ? "i" : ""}</span>
+      <span>${spec.fileLabel}</span>
+    </div>
+    <div class="spec-headline" contenteditable="true" spellcheck="false"
+         style="font-family: ${spec.cssFamily}; font-style: ${fStyle}; ${fvs}">${escapeHtml(state.headlineSample)}</div>
+    <div class="spec-alphabet"
+         style="font-family: ${spec.cssFamily}; font-style: ${fStyle}; ${fvs}">${escapeHtml(ALPHABET_SAMPLE)}</div>
+    <div class="spec-body" contenteditable="true" spellcheck="false"
+         style="font-family: ${spec.cssFamily}; font-style: ${fStyle}; ${fvs}">${escapeHtml(state.bodySample)}</div>
+  </div>`;
+}
+
+function escapeHtml(str) {
+  return String(str)
+    .replace(/&/g, "&amp;")
+    .replace(/</g, "&lt;")
+    .replace(/>/g, "&gt;")
+    .replace(/"/g, "&quot;");
+}
+
+function renderEditorialCards() {
+  const container = document.getElementById("editorialGrid");
+  const w = state.customWght;
+  document.getElementById("lblEdWght").textContent = w;
+
+  const families = [
+    { key: "anth", label: "Anthropic Serif", note: "Référence système ZenRay" },
+    { key: "news", label: "Newsreader", note: `Production Type · opsz ${state.opsz}pt` },
+    { key: "src4", label: "Source Serif 4", note: `Adobe · opsz ${state.opsz}pt` }
+  ];
+
+  container.innerHTML = families.map(f => {
+    // Clamp weight to supported variable range for each family
+    const clampedW = f.key === "anth" ? Math.max(300, Math.min(900, w))
+                   : f.key === "news" ? Math.max(200, Math.min(800, w))
+                   : Math.max(200, Math.min(900, w));
+    const rom = getFontSpec(f.key, clampedW, false, true);
+    const ita = getFontSpec(f.key, clampedW, true, true);
+    const numSpec = getFontSpec(f.key, 400, false, false);
+
+    return `<article class="editorial-card">
+      <div class="ed-kicker">${f.label} · wght ${clampedW} (${f.note})</div>
+      <h3 class="ed-h1" contenteditable="true" spellcheck="false"
+          style="font-family: ${rom.cssFamily}; font-variation-settings: ${rom.cssSettings};">${escapeHtml(state.headlineSample)}</h3>
+      <p class="ed-lead" contenteditable="true" spellcheck="false"
+         style="font-family: ${rom.cssFamily}; font-variation-settings: ${rom.cssSettings};">
+        Un système paramétrique sépare la définition de ses valeurs : un seul réglage propage le dessin sur toute l'interface.
+      </p>
+      <p class="ed-body" contenteditable="true" spellcheck="false"
+         style="font-family: ${rom.cssFamily}; font-variation-settings: ${rom.cssSettings};">${escapeHtml(state.bodySample)}</p>
+      <blockquote class="ed-quote" contenteditable="true" spellcheck="false"
+                  style="font-family: ${ita.cssFamily}; font-style: italic; font-variation-settings: ${ita.cssSettings};">
+        « L'italique révèle la véritable personnalité calligraphique d'une police à empattements, son rythme et sa tension. »
+      </blockquote>
+      <div class="ed-kpi-row">
+        <div>
+          <div class="ed-kpi-num" style="font-family: ${numSpec.cssFamily};">20 000 €</div>
+          <div class="ed-kpi-label">Cap autonome (400)</div>
+        </div>
+        <div>
+          <div class="ed-kpi-num" style="font-family: ${numSpec.cssFamily};">138 TTF</div>
+          <div class="ed-kpi-label">Coupes installées</div>
+        </div>
+        <div>
+          <div class="ed-kpi-num" style="font-family: ${numSpec.cssFamily};">2026·10·12</div>
+          <div class="ed-kpi-label">Chiffres tabulaires</div>
+        </div>
+      </div>
+    </article>`;
+  }).join("");
+}
+
+function renderWeightsSection() {
+  const commonEl = document.getElementById("commonWeightsContainer");
+  const extremeEl = document.getElementById("extremeWeightsContainer");
+
+  const stylesToRender = state.styleFilter === "roman" ? [false]
+                       : state.styleFilter === "italic" ? [true]
+                       : [false, true];
+
+  let commonHtml = "";
+  for (const item of COMMON_WEIGHTS) {
+    const w = item.weight === 350 ? state.customWght : item.weight;
+    const isHighlight = item.isVarOnly;
+    for (const isItalic of stylesToRender) {
+      const styleTag = isItalic ? "Italique" : "Romain";
+      const badgeLabel = item.isVarOnly ? `${w}${isItalic ? "i" : ""} var` : `${w}${isItalic ? "i" : ""}`;
+      const titleLabel = item.isVarOnly
+        ? `Graisse Variable Libre (défaut ZenRay 350, actuel : ${w}) · ${styleTag}`
+        : `${item.name} (${w}) · ${styleTag}`;
+
+      commonHtml += `<div class="weight-band ${isHighlight ? "highlight-350" : ""}">
+        <div class="weight-band-header">
+          <div class="weight-title">
+            <span class="weight-num">${badgeLabel}</span>
+            <span class="weight-name">${titleLabel}</span>
+          </div>
+          <span class="weight-status">${item.isVarOnly || state.renderMode === "variable_axis" ? "Axe Variable (wght + opsz)" : "Fichiers TTF Statiques dédiés"}</span>
+        </div>
+        <div class="tri-grid">
+          ${buildSpecimenCell("anth", "Anthropic Serif", Math.max(300, Math.min(900, w)), isItalic, item.isVarOnly, true)}
+          ${buildSpecimenCell("news", "Newsreader", Math.max(200, Math.min(800, w)), isItalic, item.isVarOnly, true)}
+          ${buildSpecimenCell("src4", "Source Serif 4", Math.max(200, Math.min(900, w)), isItalic, item.isVarOnly, true)}
+        </div>
+      </div>`;
+    }
+  }
+  commonEl.innerHTML = commonHtml;
+
+  let extremeHtml = "";
+  for (const item of EXTREME_WEIGHTS) {
+    for (const isItalic of stylesToRender) {
+      const styleTag = isItalic ? "Italique" : "Romain";
+      extremeHtml += `<div class="weight-band">
+        <div class="weight-band-header">
+          <div class="weight-title">
+            <span class="weight-num">${item.weight}${isItalic ? "i" : ""}</span>
+            <span class="weight-name">${item.name} (${item.weight}) · ${styleTag}</span>
+          </div>
+          <span class="weight-status">Hors-intersection complète (2 familles sur 3)</span>
+        </div>
+        <div class="tri-grid">
+          ${buildSpecimenCell("anth", "Anthropic Serif", item.weight, isItalic, false, item.avail.anth)}
+          ${buildSpecimenCell("news", "Newsreader", item.weight, isItalic, false, item.avail.news)}
+          ${buildSpecimenCell("src4", "Source Serif 4", item.weight, isItalic, false, item.avail.src4)}
+        </div>
+      </div>`;
+    }
+  }
+  extremeEl.innerHTML = extremeHtml;
+}
+
+function renderOpticalSizesSection() {
+  const el = document.getElementById("opticalSizesContainer");
+  const rows = [
+    { label: "Corps / Micro (Newsreader 9pt vs Source Serif 4 Base)", newsCut: "9pt", srcCut: "base" },
+    { label: "Lecture courante (Newsreader 14pt vs Source Serif 4 18pt)", newsCut: "14pt", srcCut: "18pt" },
+    { label: "Sous-titres (Newsreader 24pt vs Source Serif 4 18pt)", newsCut: "24pt", srcCut: "18pt" },
+    { label: "Titres (Newsreader 36pt vs Source Serif 4 36pt)", newsCut: "36pt", srcCut: "36pt" },
+    { label: "Grand Display (Newsreader 60pt vs Source Serif 4 48pt)", newsCut: "60pt", srcCut: "48pt" }
+  ];
+
+  el.innerHTML = rows.map(r => {
+    return `<div class="weight-band">
+      <div class="weight-band-header">
+        <div class="weight-title">
+          <span class="weight-num">opsz</span>
+          <span class="weight-name">${r.label}</span>
+        </div>
+        <span class="weight-status">Comparaison du contraste des déliés et de l'écartement</span>
+      </div>
+      <div class="tri-grid">
+        <div class="cell-specimen">
+          <div class="cell-top-meta"><span>Anthropic Serif · Regular 400</span><span>AnthropicSerif-Regular.ttf (coupe unique)</span></div>
+          <div class="spec-headline" style="font-family: 'zr_anth_400_rom', serif;">${escapeHtml(state.headlineSample)}</div>
+          <div class="spec-body" style="font-family: 'zr_anth_400_rom', serif;">${escapeHtml(state.bodySample)}</div>
+        </div>
+        <div class="cell-specimen">
+          <div class="cell-top-meta"><span>Newsreader ${r.newsCut} · Regular 400</span><span>Newsreader_${r.newsCut}-Regular.ttf</span></div>
+          <div class="spec-headline" style="font-family: 'zr_news_${r.newsCut}_400_rom', serif;">${escapeHtml(state.headlineSample)}</div>
+          <div class="spec-body" style="font-family: 'zr_news_${r.newsCut}_400_rom', serif;">${escapeHtml(state.bodySample)}</div>
+        </div>
+        <div class="cell-specimen">
+          <div class="cell-top-meta"><span>Source Serif 4 (${r.srcCut}) · Regular 400</span><span>SourceSerif4${r.srcCut === "base" ? "" : "_" + r.srcCut}-Regular.ttf</span></div>
+          <div class="spec-headline" style="font-family: 'zr_src4_${r.srcCut}_400_rom', serif;">${escapeHtml(state.headlineSample)}</div>
+          <div class="spec-body" style="font-family: 'zr_src4_${r.srcCut}_400_rom', serif;">${escapeHtml(state.bodySample)}</div>
+        </div>
+      </div>
+    </div>`;
+  }).join("");
+}
+
+function measureMetrics() {
+  const pAnth = document.getElementById("probeAnth");
+  const pNews = document.getElementById("probeNews");
+  const pSrc4 = document.getElementById("probeSrc4");
+
+  const sz = state.sizeBody + "px";
+  pAnth.style.fontSize = sz;
+  pNews.style.fontSize = sz;
+  pSrc4.style.fontSize = sz;
+
+  pAnth.style.fontFamily = "'zr_anth_400_rom', serif";
+  pNews.style.fontFamily = `'zr_news_${state.newsOpsz}_400_rom', serif`;
+  pSrc4.style.fontFamily = `'zr_src4_${state.srcOpsz}_400_rom', serif`;
+
+  const wAnth = pAnth.getBoundingClientRect().width;
+  const wNews = pNews.getBoundingClientRect().width;
+  const wSrc4 = pSrc4.getBoundingClientRect().width;
+
+  if (wAnth > 0) {
+    document.getElementById("mWidthAnth").textContent = Math.round(wAnth) + " px";
+    document.getElementById("mWidthNews").textContent = Math.round(wNews) + " px";
+    document.getElementById("mWidthSrc4").textContent = Math.round(wSrc4) + " px";
+    document.getElementById("mRatioNews").textContent = Math.round((wNews / wAnth) * 100) + "%";
+    document.getElementById("mRatioSrc4").textContent = Math.round((wSrc4 / wAnth) * 100) + "%";
+  }
+
+  // Mesure exacte sur canvas de la hauteur de 'x' a 100px
+  const canvas = document.createElement("canvas");
+  canvas.width = 200;
+  canvas.height = 200;
+  const ctx = canvas.getContext("2d");
+
+  function measureGlyphHeight(fontFamily) {
+    ctx.font = `400 100px ${fontFamily}`;
+    const m = ctx.measureText("x");
+    if (m.actualBoundingBoxAscent !== undefined) {
+      return (m.actualBoundingBoxAscent + m.actualBoundingBoxDescent).toFixed(1) + "%";
+    }
+    return "n/a";
+  }
+
+  document.getElementById("mXhAnth").textContent = measureGlyphHeight("'zr_anth_400_rom'");
+  document.getElementById("mXhNews").textContent = measureGlyphHeight(`'zr_news_${state.newsOpsz}_400_rom'`);
+  document.getElementById("mXhSrc4").textContent = measureGlyphHeight(`'zr_src4_${state.srcOpsz}_400_rom'`);
+}
+
+function applyCssVars() {
+  const root = document.documentElement;
+  root.style.setProperty("--hda-size-display", state.sizeDisplay + "px");
+  root.style.setProperty("--hda-size-specimen", state.sizeSpecimen + "px");
+  root.style.setProperty("--hda-size-lead", state.sizeLead + "px");
+  root.style.setProperty("--hda-size-body", state.sizeBody + "px");
+  root.style.setProperty("--hda-lh-body", state.lhBody);
+  root.style.setProperty("--hda-ls-display", state.lsDisplay + "em");
+  root.style.setProperty("--hda-opsz", state.opsz);
+  root.style.setProperty("--hda-custom-wght", state.customWght);
+
+  document.body.setAttribute("data-theme", state.theme);
+  document.body.setAttribute("data-guides", String(state.guides));
+
+  document.getElementById("valDisplay").textContent = state.sizeDisplay + " px";
+  document.getElementById("valSpecimen").textContent = state.sizeSpecimen + " px";
+  document.getElementById("valLead").textContent = state.sizeLead + " px";
+  document.getElementById("valBody").textContent = state.sizeBody + " px";
+  document.getElementById("valLh").textContent = state.lhBody;
+  document.getElementById("valLs").textContent = state.lsDisplay + " em";
+  document.getElementById("valOpsz").textContent = state.opsz + " pt";
+  document.getElementById("valWght").textContent = state.customWght;
+  document.getElementById("lblCurrentBody").textContent = state.sizeBody;
+  document.querySelectorAll('[data-bind="bodyPx"]').forEach(el => { el.textContent = state.sizeBody; });
+}
+
+function fullRender() {
+  applyCssVars();
+  renderEditorialCards();
+  renderWeightsSection();
+  renderOpticalSizesSection();
+  measureMetrics();
+}
+
+// Branchement des controles HDA
+document.getElementById("rngDisplay").addEventListener("input", e => { state.sizeDisplay = Number(e.target.value); applyCssVars(); });
+document.getElementById("rngSpecimen").addEventListener("input", e => { state.sizeSpecimen = Number(e.target.value); applyCssVars(); });
+document.getElementById("rngLead").addEventListener("input", e => { state.sizeLead = Number(e.target.value); applyCssVars(); });
+document.getElementById("rngBody").addEventListener("input", e => { state.sizeBody = Number(e.target.value); applyCssVars(); measureMetrics(); });
+document.getElementById("rngLh").addEventListener("input", e => { state.lhBody = Number(e.target.value); applyCssVars(); });
+document.getElementById("rngLs").addEventListener("input", e => { state.lsDisplay = Number(e.target.value); applyCssVars(); });
+document.getElementById("rngOpsz").addEventListener("input", e => { state.opsz = Number(e.target.value); fullRender(); });
+document.getElementById("rngWght").addEventListener("input", e => { state.customWght = Number(e.target.value); fullRender(); });
+
+document.getElementById("selTheme").addEventListener("change", e => { state.theme = e.target.value; applyCssVars(); });
+document.getElementById("selRenderMode").addEventListener("change", e => { state.renderMode = e.target.value; fullRender(); });
+document.getElementById("selNewsOpsz").addEventListener("change", e => { state.newsOpsz = e.target.value; fullRender(); });
+document.getElementById("selSrcOpsz").addEventListener("change", e => { state.srcOpsz = e.target.value; fullRender(); });
+document.getElementById("selStyleFilter").addEventListener("change", e => { state.styleFilter = e.target.value; renderWeightsSection(); });
+document.getElementById("selGuides").addEventListener("change", e => { state.guides = e.target.value === "true"; applyCssVars(); });
+document.getElementById("inpHeadline").addEventListener("input", e => {
+  state.headlineSample = e.target.value;
+  renderEditorialCards();
+  renderWeightsSection();
+  renderOpticalSizesSection();
+});
+
+document.getElementById("btnTogglePanel").addEventListener("click", () => {
+  document.getElementById("hdaPanel").classList.toggle("hda-Details-closed");
+});
+
+document.getElementById("btnReset").addEventListener("click", () => {
+  Object.assign(state, {
+    sizeDisplay: DEFAULTS.scale_and_geometry.size_display_px,
+    sizeSpecimen: DEFAULTS.scale_and_geometry.size_specimen_px,
+    sizeLead: DEFAULTS.scale_and_geometry.size_lead_px,
+    sizeBody: DEFAULTS.scale_and_geometry.size_body_px,
+    lhBody: DEFAULTS.scale_and_geometry.line_height_body,
+    lsDisplay: DEFAULTS.scale_and_geometry.letter_spacing_display_em,
+    opsz: DEFAULTS.scale_and_geometry.variable_opsz,
+    customWght: DEFAULTS.scale_and_geometry.variable_custom_wght,
+    theme: DEFAULTS.display_and_theme.theme,
+    renderMode: DEFAULTS.display_and_theme.render_mode,
+    newsOpsz: DEFAULTS.display_and_theme.newsreader_optical_cut,
+    srcOpsz: DEFAULTS.display_and_theme.sourceserif_optical_cut,
+    styleFilter: DEFAULTS.display_and_theme.style_filter,
+    guides: DEFAULTS.display_and_theme.show_metrics_guides,
+    headlineSample: DEFAULTS.display_and_theme.headline_sample,
+    bodySample: DEFAULTS.display_and_theme.body_sample
+  });
+  document.getElementById("rngDisplay").value = state.sizeDisplay;
+  document.getElementById("rngSpecimen").value = state.sizeSpecimen;
+  document.getElementById("rngLead").value = state.sizeLead;
+  document.getElementById("rngBody").value = state.sizeBody;
+  document.getElementById("rngLh").value = state.lhBody;
+  document.getElementById("rngLs").value = state.lsDisplay;
+  document.getElementById("rngOpsz").value = state.opsz;
+  document.getElementById("rngWght").value = state.customWght;
+  document.getElementById("selTheme").value = state.theme;
+  document.getElementById("selRenderMode").value = state.renderMode;
+  document.getElementById("selNewsOpsz").value = state.newsOpsz;
+  document.getElementById("selSrcOpsz").value = state.srcOpsz;
+  document.getElementById("selStyleFilter").value = state.styleFilter;
+  document.getElementById("selGuides").value = String(state.guides);
+  document.getElementById("inpHeadline").value = state.headlineSample;
+  fullRender();
+});
+
+document.getElementById("btnCopyPrompt").addEventListener("click", async () => {
+  const payload = {
+    version: "V_001",
+    scale_and_geometry: {
+      size_display_px: state.sizeDisplay,
+      size_specimen_px: state.sizeSpecimen,
+      size_lead_px: state.sizeLead,
+      size_body_px: state.sizeBody,
+      line_height_body: state.lhBody,
+      letter_spacing_display_em: state.lsDisplay,
+      variable_opsz: state.opsz,
+      variable_custom_wght: state.customWght
+    },
+    display_and_theme: {
+      theme: state.theme,
+      render_mode: state.renderMode,
+      newsreader_optical_cut: state.newsOpsz,
+      sourceserif_optical_cut: state.srcOpsz,
+      style_filter: state.styleFilter,
+      show_metrics_guides: state.guides
+    }
+  };
+  const txt = JSON.stringify(payload, null, 2);
+  try {
+    await navigator.clipboard.writeText(txt);
+    const btn = document.getElementById("btnCopyPrompt");
+    const prev = btn.textContent;
+    btn.textContent = "Valeurs copiées dans le presse-papiers";
+    setTimeout(() => { btn.textContent = prev; }, 1800);
+  } catch (err) {
+    prompt("Copier ces valeurs HDA :", txt);
+  }
+});
+
+fullRender();
+if (document.fonts && document.fonts.ready) {
+  document.fonts.ready.then(() => { measureMetrics(); });
+}
+</script>
+</body>
+</html>
